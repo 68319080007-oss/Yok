@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <!--Bootstrap 5.3 CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Navbar-->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">----Kittipat somcharoen----</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!--Home / Carousel-->
+<main>
+  <section id="home" class="mb-5">
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!--Indicators-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <!--Slides-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Network and Security.png" class="d-block w-100" alt="Slide 1" style="object-fit: contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>ยินดีต้อนรับ</h5>
+            <p>สู่เว็บไซต์ Portfolio ส่วนตัวของฉัน</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Network and Security.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>แนะนำตัว</h5>
+            <p>เกี่ยวกับ นาย กิตติพัฒน์ สมเจริญ</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.png" class="d-block w-100" alt="Slide 3" style="object-fit: contain;" >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>พร้อมทำงานร่วมกับคุณ</h5>
+            <p>ติดต่อเพื่อเริ่มต้นโครงการใหม่</p>
+          </div>
+        </div>
+      </div>
+      <!--Controls-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!--Projects-->
+  <section id="projects" class="container mb-5">
+    <h2 class="text-center mb-4">ผลงานของฉัน</h2>
+    <div class="row g-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="img/certificate.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Cisco Academy</h5>
+            <p class="card-text">Certificate cisco academy : Networking Basics</p>
+            <a href="#" class="btn btn-primary">ดูโปรเจกต์</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="img/cer.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Certificate</h5>
+            <p class="card-text">Course completion</p>
+            <a href="#" class="btn btn-primary">ดูโปรเจกต์</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="img/Blue and White Simple Modern Certificate of Appreciation.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">เรียนจบ</h5>
+            <p class="card-text">จบจาก วิทยาลัยเทคนิคสัตหีบ สาขา เทคนิคคอมพิวเตอร์ ระดับปวช.</p>
+            <a href="#" class="btn btn-primary">ดูโปรเจกต์</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact-->
+  <section id="contact" class="container mb-5">
+    <h2 class="text-center mb-4">ติดต่อเรา</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">ชื่อ</label>
+          <input type="text" class="form-control" id="firstName" placeholder="กรอกชื่อ">
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">นามสกุล</label>
+          <input type="text" class="form-control" id="lastName" placeholder="กรอกนามสกุล">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">อีเมล</label>
+        <input type="email" class="form-control" id="email" placeholder="example@email.com">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">ข้อความ</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="เขียนข้อความของคุณที่นี่"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">ส่งข้อความ</button>
+    </form>
+  </section>
+</main>
+
+<!--Footer-->
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 My Portfolio. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
